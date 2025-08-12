@@ -26,7 +26,7 @@ This tool allows you to **upload your resume** in PDF format and compare it with
 ---
 
 ## Screenshots
-###Homepage
+
 ![Homepage of ATS Resume Checker](src/image.png)
 
 ---
@@ -37,7 +37,7 @@ This tool allows you to **upload your resume** in PDF format and compare it with
 ```bash
 git clone https://github.com/your-username/ats-resume-checker.git
 cd ats-resume-checker
----
+
 2️⃣ Create a virtual environment
 
 bash
@@ -46,14 +46,14 @@ Edit
 python -m venv venv
 source venv/bin/activate   # On macOS/Linux
 venv\Scripts\activate      # On Windows
----
+
 3️⃣ Install dependencies
 
 bash
 Copy
 Edit
 pip install -r requirements.txt
----
+
 4️⃣ Set up your environment variables
 
 Create a .env file in the project root
@@ -79,9 +79,8 @@ Copy
 Edit
 http://localhost:8501
 
----
 
- How It Works
+How It Works
 Upload your resume in PDF format.
 
 Paste the job description.
