@@ -20,7 +20,7 @@ genai.configure(api_key=GEMINI_API_KEY)
 
 # Page Config
 st.set_page_config(
-    page_title="ATS Resume Checker",
+    page_title="ATS Score Insight",
     page_icon="📝",
     layout="centered",
 )
@@ -38,7 +38,7 @@ body { background-color: #000; color: #fff; font-family: 'Montserrat', sans-seri
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="title">ATS Resume Checker</div>', unsafe_allow_html=True)
+st.markdown('<div class="title">ATS Score Insight</div>', unsafe_allow_html=True)
 st.markdown('<div class="subtitle">Paste a Job Description or Job Title, upload your resume, and get an ATS score & suggestions</div>', unsafe_allow_html=True)
 
 # ---------- Helper functions ----------
