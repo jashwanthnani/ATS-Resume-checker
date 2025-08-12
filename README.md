@@ -29,8 +29,6 @@ This tool allows you to **upload your resume** in PDF format and compare it with
 
 ![Homepage of ATS Resume Checker](src/image.png)
 
----
-
 ## 📦 Installation
 
 ### 1️⃣ Clone the repository
