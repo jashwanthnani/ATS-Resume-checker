@@ -33,32 +33,36 @@ This tool allows you to **upload your resume** in PDF format and compare it with
 
 ## 📦 Installation
 
-1️⃣ **Clone the repository**
+### 1️⃣ Clone the repository
+
 ```bash
 git clone https://github.com/your-username/ats-resume-checker.git
 cd ats-resume-checker
 
-2️⃣ Create a virtual environment
+2️⃣ Create a virtual environment and activate it
+On macOS/Linux:
 
 bash
 Copy
 Edit
 python -m venv venv
-source venv/bin/activate   # On macOS/Linux
-venv\Scripts\activate      # On Windows
+source venv/bin/activate
+On Windows:
+
+bash
+Copy
+Edit
+python -m venv venv
+venv\Scripts\activate
 
 3️⃣ Install dependencies
-
 bash
 Copy
 Edit
 pip install -r requirements.txt
 
 4️⃣ Set up your environment variables
-
-Create a .env file in the project root
-
-Add your Google API Key:
+Create a .env file in the project root with the following content:
 
 env
 Copy
@@ -66,7 +70,7 @@ Edit
 GOOGLE_API_KEY=your_google_api_key_here
 
 ▶️ Usage
-Run the Streamlit app:
+Run the Streamlit app with:
 
 bash
 Copy
@@ -78,24 +82,18 @@ arduino
 Copy
 Edit
 http://localhost:8501
+⚙️ How It Works
+Upload your resume in PDF or TXT format.
 
+Paste the job description (optional).
 
-How It Works
-Upload your resume in PDF format.
+The system extracts text from your resume and the job description.
 
-Paste the job description.
+TF-IDF Vectorizer and Cosine Similarity calculate a matching score.
 
-The system extracts text from the resume and job description.
+Google Gemini API generates custom suggestions for improvement.
 
-TF-IDF Vectorizer + Cosine Similarity calculates a similarity score.
-
-Google Gemini API generates custom improvement suggestions.
-
-The results are displayed with a clean, modern Streamlit UI.
+Results are displayed in a clean, modern Streamlit UI.
 
 📜 License
 This project is licensed under the MIT License.
-
-🤝 Contributing
-Pull requests are welcome! For major changes, open an issue first to discuss your ideas.
-
