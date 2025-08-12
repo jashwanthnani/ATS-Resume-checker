@@ -38,7 +38,6 @@ This tool allows you to **upload your resume** in PDF format and compare it with
 ```bash
 git clone https://github.com/your-username/ats-resume-checker.git
 cd ats-resume-checker
-
 2️⃣ Create a virtual environment and activate it
 On macOS/Linux:
 
@@ -54,13 +53,11 @@ Copy
 Edit
 python -m venv venv
 venv\Scripts\activate
-
 3️⃣ Install dependencies
 bash
 Copy
 Edit
 pip install -r requirements.txt
-
 4️⃣ Set up your environment variables
 Create a .env file in the project root with the following content:
 
@@ -68,7 +65,6 @@ env
 Copy
 Edit
 GOOGLE_API_KEY=your_google_api_key_here
-
 ▶️ Usage
 Run the Streamlit app with:
 
@@ -78,7 +74,7 @@ Edit
 streamlit run app.py
 The app will open in your browser at:
 
-arduino
+plaintext
 Copy
 Edit
 http://localhost:8501
